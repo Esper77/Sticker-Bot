@@ -1,16 +1,9 @@
 import telebot
 from random import choice
 
+TOKEN = ""
 
-bot = telebot.TeleBot(token="5880785142:AAEU12-MT3jdVPk6M5reRQvEIFG3-QOABtk")
-
-
-# @bot.message_handler(content_types=["text"])
-# def answer(message):
-#     text = message.text
-#     chat_id = message.chat.id
-#
-#     bot.send_message(chat_id, text[::-1])
+bot = telebot.TeleBot(token=TOKEN)
 
 
 @bot.message_handler(content_types=["sticker"])
